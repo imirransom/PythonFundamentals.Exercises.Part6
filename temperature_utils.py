@@ -1,6 +1,5 @@
 from typing import Iterable, Tuple
 
-
 def convert_to_celsius(fahrenheit_temp: float) -> float:
     """
     Given a float representing a temperature in fahrenheit, return the corresponding value in celsius.
@@ -8,7 +7,7 @@ def convert_to_celsius(fahrenheit_temp: float) -> float:
     :param fahrenheit_temp: A float representing a temperature in fahrenheit
     :return: A float representing the corresponding value of the fahrenheit_temp parameter in celsius
     """
-    return (fahrenheit_temp - 32) * 1.8
+    return (fahrenheit_temp - 32) / 1.8
 
 
 def convert_to_fahrenheit(celsius_temp: float) -> int:
@@ -19,7 +18,7 @@ def convert_to_fahrenheit(celsius_temp: float) -> int:
     :return:  A float representing the corresponding value of the celsius_temp parameter in fahrenheit
     """
     # °F = (°C × (9/5)) + 32
-    return (celsius_temp * 1.8) + 32
+    return int((celsius_temp * 1.8) + 32)
 
 
 def temperature_tuple(temperatures: Iterable, input_unit_of_measurement: str) -> Tuple[Tuple[float, float]]:
