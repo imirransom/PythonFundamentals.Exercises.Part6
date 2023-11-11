@@ -25,3 +25,19 @@ def convert_celsius_to_kelvin(celsius_temp: float) -> int:
 
 
 
+def convert_fahrenheit_to_kelvin_(fahrenheit_temp: float) -> int:
+
+    return int(((fahrenheit_temp - 32) * 1.8) + 273.15)
+
+
+
+
+def convert_kelvin_to_celsius(kelvin_temp: float) -> float:
+
+    return kelvin_temp - 273.15
+
+
+
+def convert_kelvin_to_fahrenheit(kelvin_temp: float) -> float:
+
+    return ((kelvin_temp - 273.15) * 1.8) + 32
