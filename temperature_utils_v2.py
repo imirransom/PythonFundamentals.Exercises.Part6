@@ -27,15 +27,15 @@ def convert_celsius_to_kelvin(celsius_temp: float) -> float:
 def convert_fahrenheit_to_kelvin_(fahrenheit_temp: float) -> float:
 
     return round(((fahrenheit_temp - 32) * (5/9)) + 273.15, 2)
-                            # (77°F − 32) × 5/9 + 273.15 = 298.15K
+
 
 
 def convert_kelvin_to_celsius(kelvin_temp: float) -> float:
 
-    return kelvin_temp - 273.15
+    return round(kelvin_temp - 273.15, 2)
 
 
 
 def convert_kelvin_to_fahrenheit(kelvin_temp: float) -> float:
 
-    return ((kelvin_temp - 273.15) * 1.8) + 32
+    return round(((kelvin_temp - 273.15) * 1.8) + 32, 2)
